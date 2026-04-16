@@ -72,7 +72,7 @@ function Purchases() {
 
       {/* --- MOBILE TOGGLE --- */}
       <button
-        className="md:hidden fixed top-6 left-6 z-[60] p-3 bg-slate-900 border border-white/10 rounded-2xl shadow-2xl text-white"
+        className="md:hidden fixed top-6 right-6 z-[60] p-3 bg-slate-900 border border-white/10 rounded-2xl shadow-2xl text-white"
         onClick={toggleSidebar}
       >
         {isSidebarOpen ? <HiX size={24} /> : <HiMenu size={24} />}
