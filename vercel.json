@@ -1,25 +1,10 @@
 {
-  "builds": [
+  "buildCommand": "cd frontend && npm run build",
+  "outputDirectory": "frontend/dist",
+  "rewrites": [
     {
-      "src": "frontend/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "frontend/dist"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/admin/?.*",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/((?!api).*)",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/api/(.*)",
-      "dest": "https://course-app-kh7m.onrender.com/$1"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
