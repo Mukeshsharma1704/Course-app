@@ -3,8 +3,7 @@ dotenv.config();
 
 const JWT_USER_PASSWORD = process.env.JWT_USER_PASSWORD;
 const JWT_ADMIN_PASSWORD = process.env.JWT_ADMIN_PASSWORD;
-const STRIPE_SECRET_KEY =
-  "process.env.STRIPE_SECRET_KEY";
+const STRIPE_SECRET_KEY = process.env.STRIPE_SECRET_KEY;
 
 const CLOUDINARY_CLOUD_NAME = process.env.cloud_name;
 const CLOUDINARY_API_KEY = process.env.api_key;
